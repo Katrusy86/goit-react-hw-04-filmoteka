@@ -1,0 +1,14 @@
+.nav_list li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 25px;
+    text-decoration: none;
+}
+ 
+.nav_list {
+    font-size: 200%;
+    border-bottom: 2px solid maroon; 
+    font-weight: normal;
+    padding-bottom: 10px;
+}
