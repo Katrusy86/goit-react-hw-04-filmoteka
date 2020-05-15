@@ -8,7 +8,7 @@ const SearchMoviesList = ({movies,query,from}) => (
         <li key={movie.id}>
         <Link to={{
             pathname:`/movies/${movie.id}`,
-            search:`?query=${query}`,
+            // search:`?query=${query}`,
             state: {from, search:query}
             }}>
             {movie.original_title}

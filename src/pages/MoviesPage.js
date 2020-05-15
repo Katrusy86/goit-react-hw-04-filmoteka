@@ -21,9 +21,11 @@ class MoviesPage extends Component {
     
     handleSubmit = (e) => {
         e.preventDefault()
+        if (this.state.query){
         fetchSearchMovie(this.state.query).then((movies)=>this.setState({movies:movies.results}))
         this.props.history.push({pathname: this.props.location.pathname, search:`query=${this.state.query}`})
     }
+}
     
     
     handleChange =(e)=>{
